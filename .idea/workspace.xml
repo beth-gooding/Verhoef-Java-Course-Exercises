@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8130cfd-0c11-430f-9369-86b8d577281a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HumanInstructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +54,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
+  <component name="RunManager" selected="JUnit.MainTest.main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="factory" />
@@ -105,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.main" />
+        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -120,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667315301950</updated>
       <workItem from="1667315305384" duration="843000" />
-      <workItem from="1667316183778" duration="2387000" />
+      <workItem from="1667316183778" duration="2783000" />
     </task>
     <servers />
   </component>

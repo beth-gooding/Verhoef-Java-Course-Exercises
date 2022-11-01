@@ -20,7 +20,6 @@ class MainTest {
         String actualAnswer = humanInstructor.askQuestion(question); // Ask the instructor the question and save output
 
         // assert - check that you get the desired outcomes
-        if (! expectedAnswer.equals(actualAnswer))
-        fail();
+        assertEquals(expectedAnswer, actualAnswer); // this is a matcher from the assertion package
     }
 }
