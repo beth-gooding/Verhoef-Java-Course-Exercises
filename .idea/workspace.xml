@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8130cfd-0c11-430f-9369-86b8d577281a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/factory/InstructorFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HumanInstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/factory/HumanInstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/factory/Instructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/factory/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/FactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/factory/FactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,6 +54,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.factory" />
       <recent name="org.example" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -61,11 +66,11 @@
   </component>
   <component name="RunManager" selected="JUnit.FactoryTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <option name="MAIN_CLASS_NAME" value="org.factory.Main" />
       <module name="factory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +82,12 @@
       <module name="factory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.FactoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.factory.FactoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,12 +97,12 @@
       <module name="factory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.FactoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.factory.FactoryTest" />
       <option name="METHOD_NAME" value="humanInstructorInterface" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -108,12 +113,12 @@
       <module name="factory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.FactoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.factory.FactoryTest" />
       <option name="METHOD_NAME" value="main" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -139,7 +144,7 @@
       <updated>1667315301950</updated>
       <workItem from="1667315305384" duration="843000" />
       <workItem from="1667316183778" duration="5544000" />
-      <workItem from="1667380679115" duration="1253000" />
+      <workItem from="1667380679115" duration="2717000" />
     </task>
     <servers />
   </component>

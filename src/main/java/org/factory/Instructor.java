@@ -1,4 +1,4 @@
-package org.example;
+package org.factory;
 
 public interface Instructor {
 

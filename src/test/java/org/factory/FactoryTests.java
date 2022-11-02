@@ -1,4 +1,4 @@
-package org.example;
+package org.factory;
 
 // import this to fill in the package name so that you don't need to type in the package name yourself
 import org.junit.jupiter.api.DisplayName;
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 // Without any import you would have to use the full long name to use any methods from the packages
 
-class FactoryTest {
+class FactoryTests {
     // You can give the test method a descriptive name and/or a display name (junit)
     @Test
     @DisplayName(" A human  instructor returns an uppercase version of a question")
@@ -35,6 +35,18 @@ class FactoryTest {
         Instructor instructor = humanInstructor;
 
         // assert - not needed here as the compiler will fail if the human instructor doesn't implement Instructor
+
+    }
+
+    // Write the InstructorFactory class and test
+    @Test
+    @DisplayName( "The InstructorFactory creates an instructor")
+    void instructorFactoryCreate() {
+        // arrange
+        InstructorFactory instructorFactory = new InstructorFactory();
+
+        // act and assert - compiler will fail if this method doesn't work correctly
+        Instructor instructorFromFactory = instructorFactory.create();
 
     }
 }
