@@ -45,8 +45,11 @@ class FactoryTests {
         // arrange
         InstructorFactory instructorFactory = new InstructorFactory();
 
-        // act and assert - compiler will fail if this method doesn't work correctly
+        // act
         Instructor instructorFromFactory = instructorFactory.create();
+
+        // assert
+        assertInstanceOf(Instructor.class, instructorFromFactory);
 
     }
 }
