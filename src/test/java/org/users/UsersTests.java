@@ -35,21 +35,22 @@ class UsersTests {
     @DisplayName("The user processor can filter a list of users by colour")
     void filterByColour() {
         // arrange
-        User user1 = new User();
-        user1.setProperties(1, "Player1", "red");
-
-        User user2 = new User();
-        user2.setProperties(2, "Player2", "blue");
-
-        List<User> userList = Arrays.asList(user1, user2);
-
         UserProcessor userProcessor = new UserProcessor();
 
-        List<User> expectedFilteredList = Arrays.asList(user1);
+        User user1 = new User();
+        User user2 = new User();
+        User user3 = new User();
+
+        user1.setProperties(1, "Player1", "red");
+        user2.setProperties(2, "Player2", "blue");
+        user3.setProperties(3, "Player3", "blue");
+
+
+        List<User> userList = Arrays.asList(user1, user2, user3);
+        List<User> expectedFilteredList = Arrays.asList(user2, user3);
 
         // act
-        List<User> actualFilteredList = userProcessor.filter(userList, "red");
-
+        List<User> actualFilteredList = userProcessor.filter(userList, "blue");
         // assert
         assertEquals(expectedFilteredList, actualFilteredList);
     }

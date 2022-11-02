@@ -1,2 +1,4 @@
-package org.users;public class Main {
+package org.users;
+
+public class Main {
 }
