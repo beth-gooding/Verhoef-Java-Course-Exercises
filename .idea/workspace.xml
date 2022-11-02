@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8130cfd-0c11-430f-9369-86b8d577281a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/users/ColourFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/users/Finder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/users/NameFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/users/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/users/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/users/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/users/UserProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/users/UserProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/users/UsersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/users/UsersTests.java" afterDir="false" />
     </list>
@@ -19,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -167,7 +168,7 @@
       <updated>1667315301950</updated>
       <workItem from="1667315305384" duration="843000" />
       <workItem from="1667316183778" duration="5544000" />
-      <workItem from="1667380679115" duration="10734000" />
+      <workItem from="1667380679115" duration="12686000" />
     </task>
     <servers />
   </component>

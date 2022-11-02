@@ -36,6 +36,7 @@ class UsersTests {
     void filterByColour() {
         // arrange
         UserProcessor userProcessor = new UserProcessor();
+        ColourFinder colourFinder = new ColourFinder();
 
         User user1 = new User();
         User user2 = new User();
@@ -50,7 +51,7 @@ class UsersTests {
         List<User> expectedFilteredList = Arrays.asList(user2, user3);
 
         // act
-        List<User> actualFilteredList = userProcessor.filter(userList, "blue");
+        List<User> actualFilteredList = userProcessor.genericFilter(userList, colourFinder,"blue");
         // assert
         assertEquals(expectedFilteredList, actualFilteredList);
     }
