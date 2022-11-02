@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8130cfd-0c11-430f-9369-86b8d577281a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/users/ColourFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/users/Finder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/users/NameFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/users/PointsTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/users/Transformer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/users/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/users/UserProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/users/UserProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/users/UsersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/users/UsersTests.java" afterDir="false" />
     </list>
@@ -33,7 +33,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Gx1CvxQjv3QBMJzGeROplSCGhA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -168,26 +168,11 @@
       <updated>1667315301950</updated>
       <workItem from="1667315305384" duration="843000" />
       <workItem from="1667316183778" duration="5544000" />
-      <workItem from="1667380679115" duration="12686000" />
+      <workItem from="1667380679115" duration="18788000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/users/UsersTests.java</url>
-          <line>35</line>
-          <properties class="org.users.UsersTests" method="filterByColour">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

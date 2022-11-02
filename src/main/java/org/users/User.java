@@ -5,6 +5,15 @@ public class User {
     private String name;
     private String favouriteColour;
 
+    private int points = 0;
+
+    public User(int id, String name, String favouriteColour, int points) {
+        this.id = id;
+        this.name = name;
+        this.favouriteColour = favouriteColour;
+        this.points = points;
+    }
+
     private void setId(int newId) {
         id = newId;
     }
@@ -17,10 +26,11 @@ public class User {
         favouriteColour = newFavouriteColour;
     }
 
-    public void setProperties(int id, String name, String favouriteColour) {
+    public void setProperties(int id, String name, String favouriteColour, int points) {
         setId(id);
         setName(name);
         setFavouriteColour(favouriteColour);
+        setPoints(points);
     }
 
     public int getId() {
@@ -33,5 +43,13 @@ public class User {
 
     public String getFavouriteColour() {
         return favouriteColour;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        points = points;
     }
 }
