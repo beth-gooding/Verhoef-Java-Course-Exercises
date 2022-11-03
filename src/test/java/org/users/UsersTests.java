@@ -16,7 +16,7 @@ class UsersTests {
         User user = new User(1, "Beth", "red", 5);
         int expectedId = 1;
         String expectedName = "Beth";
-        String expectedFavouriteColour = "Red";
+        String expectedFavouriteColour = "red";
 
         // act
         int actualId = user.getId();
@@ -51,8 +51,8 @@ class UsersTests {
     }
 
     @Test
-    @DisplayName("UserProcessor can transform the user details")
-    void UserProcessorCanTransformUserDetails() {
+    @DisplayName("UserProcessor can transform the user's points using the class method")
+    void UserProcessorCanUpdateUserPointsWithClass() {
         var user1 = new User(1, "Issy", "Burgundy", 5);
         var user2 = new User(2, "Sixian", "Mustard", 5);
         var user3 = new User(3, "Clarisa", "Light Blue", 5);
@@ -60,6 +60,33 @@ class UsersTests {
         List<User> untransformedUsers = List.of(user1, user2, user3);
 
         var addFivePointsTransformer = new AddFivePointsTransformer();
+
+        // act
+        List<User> actualTransformedUsers = UserProcessor.transformUser(untransformedUsers, addFivePointsTransformer);
+
+        // assert
+        assertEquals( 10, actualTransformedUsers.get(0).getPoints());
+        assertEquals(10, actualTransformedUsers.get(1).getPoints());
+        assertEquals(10, actualTransformedUsers.get(2).getPoints());
+    }
+
+    @Test
+    @DisplayName("UserProcessor can transform the user's points using the lambda method")
+    void UserProcessorCanUpdateUserPointsWithLambda() {
+        // Using var means the compiler can work out the type of the object at compile, at declaration we don't need to know
+        var user1 = new User(1, "Issy", "Burgundy", 5);
+        var user2 = new User(2, "Sixian", "Mustard", 5);
+        var user3 = new User(3, "Clarisa", "Light Blue", 5);
+
+        List<User> untransformedUsers = List.of(user1, user2, user3);
+
+        // You can put a lambda at the end of a functional interface as long as:
+        // 1. The interface is a functional interface
+        // 2. The signature of the lambda is the same as the interface's abstract method
+        Transformer addFivePointsTransformer = user -> {
+            user.setPoints(user.getPoints() + 5);
+            return user;
+        };
 
         // act
         List<User> actualTransformedUsers = UserProcessor.transformUser(untransformedUsers, addFivePointsTransformer);

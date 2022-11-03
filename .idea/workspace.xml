@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d8130cfd-0c11-430f-9369-86b8d577281a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/users/PointsTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/users/AddFivePointsTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/users/UserProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/users/UserProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/users/UsersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/users/UsersTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,23 +66,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UsersTests.UserProcessorCanTransformUserDetails">
-    <configuration name="FactoryTests.instructorFactoryCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="factory" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.factory" />
-      <option name="MAIN_CLASS_NAME" value="org.factory.FactoryTests" />
-      <option name="METHOD_NAME" value="instructorFactoryCreate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UsersTests">
     <configuration name="UsersTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="factory" />
       <extension name="coverage">
@@ -112,6 +93,22 @@
       <option name="PACKAGE_NAME" value="org.users" />
       <option name="MAIN_CLASS_NAME" value="org.users.UsersTests" />
       <option name="METHOD_NAME" value="UserProcessorCanTransformUserDetails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersTests.UserProcessorCanUpdateUserPointsWithLambda" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="factory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.users.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.users" />
+      <option name="MAIN_CLASS_NAME" value="org.users.UsersTests" />
+      <option name="METHOD_NAME" value="UserProcessorCanUpdateUserPointsWithLambda" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UsersTests" />
+        <item itemvalue="JUnit.UsersTests.UserProcessorCanUpdateUserPointsWithLambda" />
         <item itemvalue="JUnit.UsersTests.UserProcessorCanTransformUserDetails" />
         <item itemvalue="JUnit.UsersTests.filterByColour" />
         <item itemvalue="JUnit.UsersTests.expectedUserProperties" />
-        <item itemvalue="JUnit.FactoryTests.instructorFactoryCreate" />
-        <item itemvalue="JUnit.UsersTests" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +167,7 @@
       <workItem from="1667315305384" duration="843000" />
       <workItem from="1667316183778" duration="5544000" />
       <workItem from="1667380679115" duration="20101000" />
-      <workItem from="1667467686937" duration="3794000" />
+      <workItem from="1667467686937" duration="5868000" />
     </task>
     <servers />
   </component>
