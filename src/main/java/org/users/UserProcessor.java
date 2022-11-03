@@ -12,6 +12,9 @@ public class UserProcessor {
 
     public static List<User> transformUser(List<User> users, Transformer transformer) {
       ArrayList<User> transformedList = new ArrayList<>();
+
+      // Using a traditional (external) for loop
+      // We grab each object from a list, do something to the object and return that object in some way
       for (User user: users) {
           transformedList.add(transformer.transformUser(user));
       }
