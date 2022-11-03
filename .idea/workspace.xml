@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8130cfd-0c11-430f-9369-86b8d577281a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/generic/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/generic/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/generic/GenericsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/users/UsersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/users/UsersTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/users/UserProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/users/UserProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +57,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.generic" />
       <recent name="org.users" />
       <recent name="org.factory" />
       <recent name="org.example" />
@@ -66,7 +70,22 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UsersTests">
+  <component name="RunManager" selected="JUnit.GenericsTest">
+    <configuration name="GenericsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="factory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.generic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.generic" />
+      <option name="MAIN_CLASS_NAME" value="org.generic.GenericsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UsersTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="factory" />
       <extension name="coverage">
@@ -114,22 +133,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersTests.expectedUserProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="factory" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.users.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.users" />
-      <option name="MAIN_CLASS_NAME" value="org.users.UsersTests" />
-      <option name="METHOD_NAME" value="expectedUserProperties" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UsersTests.filterByColour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="factory" />
       <extension name="coverage">
@@ -148,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GenericsTest" />
         <item itemvalue="JUnit.UsersTests" />
         <item itemvalue="JUnit.UsersTests.UserProcessorCanUpdateUserPointsWithLambda" />
         <item itemvalue="JUnit.UsersTests.UserProcessorCanTransformUserDetails" />
         <item itemvalue="JUnit.UsersTests.filterByColour" />
-        <item itemvalue="JUnit.UsersTests.expectedUserProperties" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +170,7 @@
       <workItem from="1667315305384" duration="843000" />
       <workItem from="1667316183778" duration="5544000" />
       <workItem from="1667380679115" duration="20101000" />
-      <workItem from="1667467686937" duration="5868000" />
+      <workItem from="1667467686937" duration="11799000" />
     </task>
     <servers />
   </component>
