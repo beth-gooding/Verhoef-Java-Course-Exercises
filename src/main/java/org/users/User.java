@@ -1,5 +1,7 @@
 package org.users;
 
+import java.util.Objects;
+
 public class User {
     private int id;
     private String name;
@@ -52,5 +54,22 @@ public class User {
         return points;
     }
 
+    @Override
+    public boolean equals(Object o) {
 
+        // if it is in the same place in memory, return true
+        if (this == o) return true;
+
+        // if the object is null or the class of the object is not the same as this objects class (user) return false
+        if (o == null || getClass() != o.getClass()) return false;
+
+        // cast o to be a User object and check if the id and name of the User object are the same as the current user
+        User user = (User) o;
+        return id == user.id && name.equals(user.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name);
+    }
 }
