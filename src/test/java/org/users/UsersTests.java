@@ -57,17 +57,17 @@ class UsersTests {
         var user2 = new User(2, "Sixian", "Mustard", 5);
         var user3 = new User(3, "Clarisa", "Light Blue", 5);
 
-        List<User> unfilteredUsers = List.of(user1, user2, user3);
+        List<User> untransformedUsers = List.of(user1, user2, user3);
 
-        var pointsTransformer = new PointsTransformer();
+        var addFivePointsTransformer = new AddFivePointsTransformer();
 
         // act
-        List<User> actualFilteredUsers = UserProcessor.transformUser(unfilteredUsers, pointsTransformer);
+        List<User> actualTransformedUsers = UserProcessor.transformUser(untransformedUsers, addFivePointsTransformer);
 
         // assert
-        assertEquals( 10, actualFilteredUsers.get(0).getPoints());
-        assertEquals(10, actualFilteredUsers.get(1).getPoints());
-        assertEquals(10, actualFilteredUsers.get(2).getPoints());
+        assertEquals( 10, actualTransformedUsers.get(0).getPoints());
+        assertEquals(10, actualTransformedUsers.get(1).getPoints());
+        assertEquals(10, actualTransformedUsers.get(2).getPoints());
     }
 
 }

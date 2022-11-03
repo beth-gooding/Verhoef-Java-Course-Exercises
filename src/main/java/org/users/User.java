@@ -26,6 +26,9 @@ public class User {
         favouriteColour = newFavouriteColour;
     }
 
+    public void setPoints(int newPoints) {
+        points = newPoints;
+    }
     public void setProperties(int id, String name, String favouriteColour, int points) {
         setId(id);
         setName(name);
@@ -49,7 +52,5 @@ public class User {
         return points;
     }
 
-    public void setPoints(int points) {
-        points = points;
-    }
+
 }
