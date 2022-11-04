@@ -14,8 +14,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class MethodReferencesTests {
 
     @Test
-    @DisplayName("Sort method for a collection using a comparator object")
-    void sortMethodForCollectionsUsingComparator(){
+    @DisplayName("Sort method based on a user's name for a collection using a comparator object")
+    void sortBasedOnNameUsingComparator(){
         // arrange
         var user1 = new User(1, "Issy", "Burgundy", 5);
         var user2 = new User(2, "Sixian", "Mustard", 10);
@@ -114,4 +114,65 @@ public class MethodReferencesTests {
         assertEquals("Clarisa", users.get(0).getName());
 
     }
+
+    @Test
+    @DisplayName("Sort method based on a user's points for a collection using a comparator object")
+    void sortMethodForPointsUsingComparator(){
+        // arrange
+        var user1 = new User(1, "Issy", "Burgundy", 5);
+        var user2 = new User(2, "Sixian", "Mustard", 10);
+        var user3 = new User(3, "Clarisa", "Light Blue", 15);
+
+        // List.of will create an immutable list which is not useful here, as we need to be able to sort the list
+        var usersImmutable = List.of(user1, user2, user3);
+
+        // This list of users is mutable, which means we will be able to directly sort this list
+        List<User> users = new ArrayList<>();
+        users.addAll(usersImmutable);
+
+        // act (sort)
+        // using a comparator object
+        UserComparator pointsComparator = new UserComparator();
+
+        // We could write a lambda to call the second function on pointsComparator, but this can get quite repetitive
+     //   Collections.sort(users, (u1, u2) -> {
+     //       return pointsComparator.compareByPoints(u1, u2);
+     //   });
+
+        // Instead of the lines above, we can use a method reference as below. Java can pass in the parameters for you
+        Collections.sort(users, pointsComparator::compareByPoints);
+
+        // assert
+        assertEquals("Clarisa", users.get(0).getName());
+        assertEquals("Issy", users.get(1).getName());
+        assertEquals("Sixian", users.get(2).getName());
+
+    }
+
+    @Test
+    @DisplayName("Sort method based on a user's id for a collection using a comparator object")
+    void sortMethodForIdsUsingComparator(){
+        // arrange
+        var user1 = new User(1, "Issy", "Burgundy", 5);
+        var user2 = new User(2, "Sixian", "Mustard", 10);
+        var user3 = new User(3, "Clarisa", "Light Blue", 15);
+
+        // List.of will create an immutable list which is not useful here, as we need to be able to sort the list
+        var usersImmutable = List.of(user1, user2, user3);
+
+        // This list of users is mutable, which means we will be able to directly sort this list
+        List<User> users = new ArrayList<>();
+        users.addAll(usersImmutable);
+
+        // act (sort)
+        // If we have a static method, we refer to the class rather than an object of the class for method references
+        Collections.sort(users, UserComparator::compareById);
+
+        // assert
+        assertEquals("Clarisa", users.get(0).getName());
+        assertEquals("Issy", users.get(1).getName());
+        assertEquals("Sixian", users.get(2).getName());
+
+    }
+
 }
