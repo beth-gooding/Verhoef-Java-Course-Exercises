@@ -28,9 +28,6 @@ public class MethodReferencesTests {
         List<User> users = new ArrayList<>();
         users.addAll(usersImmutable);
 
-
-        var expectedSortedUser = List.of(user3, user2, user1);
-
         // act (sort)
         // using a comparator object
         Comparator<User> namesComparator = new UserComparator();
@@ -58,9 +55,6 @@ public class MethodReferencesTests {
         List<User> users = new ArrayList<>();
         users.addAll(usersImmutable);
 
-
-        var expectedSortedUser = List.of(user3, user2, user1);
-
         // act (sort)
         // using a comparator lambda
         Collections.sort(users, (u1, u2) -> {return u1.getName().compareTo(u2.getName());});
@@ -69,6 +63,55 @@ public class MethodReferencesTests {
         assertEquals("Clarisa", users.get(0).getName());
         assertEquals("Issy", users.get(1).getName());
         assertEquals("Sixian", users.get(2).getName());
+
+    }
+
+    @Test
+    @DisplayName("The removeIf method can remove users with names starting with S")
+    void removeUsersWithNamesStartingWithS(){
+        // arrange
+        var user1 = new User(1, "Issy", "Burgundy", 5);
+        var user2 = new User(2, "Sixian", "Mustard", 10);
+        var user3 = new User(3, "Clarisa", "Light Blue", 15);
+
+        // List.of will create an immutable list which is not useful here, as we need to be able to sort the list
+        var usersImmutable = List.of(user1, user2, user3);
+
+        // This list of users is mutable, which means we will be able to directly sort this list
+        List<User> users = new ArrayList<>();
+        users.addAll(usersImmutable);
+
+        // act
+        users.removeIf(user -> user.getName().startsWith("S"));
+
+        // assert
+        assertEquals(2, users.size());
+        assertEquals("Issy", users.get(0).getName());
+        assertEquals("Clarisa", users.get(1).getName());
+
+    }
+
+    @Test
+    @DisplayName("The removeIf method can remove users with less than 15 points")
+    void removeUsersWithLessThan15Points(){
+        // arrange
+        var user1 = new User(1, "Issy", "Burgundy", 5);
+        var user2 = new User(2, "Sixian", "Mustard", 10);
+        var user3 = new User(3, "Clarisa", "Light Blue", 15);
+
+        // List.of will create an immutable list which is not useful here, as we need to be able to sort the list
+        var usersImmutable = List.of(user1, user2, user3);
+
+        // This list of users is mutable, which means we will be able to directly sort this list
+        List<User> users = new ArrayList<>();
+        users.addAll(usersImmutable);
+
+        // act - use a lambda to say if a user has less than 15 points, remove them!
+        users.removeIf(user -> user.getPoints() < 15);
+
+        // assert
+        assertEquals(1, users.size());
+        assertEquals("Clarisa", users.get(0).getName());
 
     }
 }

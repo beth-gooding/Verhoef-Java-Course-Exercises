@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8130cfd-0c11-430f-9369-86b8d577281a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/methodReferences/UserComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/methodReferences/MethodReferencesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d8130cfd-0c11-430f-9369-86b8d577281a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,22 +65,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MethodReferencesTests">
-    <configuration name="GenericsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="factory" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.generic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.generic" />
-      <option name="MAIN_CLASS_NAME" value="org.generic.GenericsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MethodReferencesTests.removeUsersWithLessThan15Points">
     <configuration name="GenericsTest.genericTypesCanBeRealised" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="factory" />
       <extension name="coverage">
@@ -112,6 +93,22 @@
       <option name="PACKAGE_NAME" value="org.methodReferences" />
       <option name="MAIN_CLASS_NAME" value="org.methodReferences.MethodReferencesTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MethodReferencesTests.removeUsersWithLessThan15Points" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="factory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.methodReferences.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.methodReferences" />
+      <option name="MAIN_CLASS_NAME" value="org.methodReferences.MethodReferencesTests" />
+      <option name="METHOD_NAME" value="removeUsersWithLessThan15Points" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MethodReferencesTests.removeUsersWithLessThan15Points" />
         <item itemvalue="JUnit.MethodReferencesTests" />
         <item itemvalue="JUnit.MethodReferencesTests.sortMethodForCollectionsUsingComparator" />
         <item itemvalue="JUnit.MethodReferencesTests.sortMethodForCollections" />
         <item itemvalue="JUnit.GenericsTest.genericTypesCanBeRealised" />
-        <item itemvalue="JUnit.GenericsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +167,7 @@
       <workItem from="1667316183778" duration="5544000" />
       <workItem from="1667380679115" duration="20101000" />
       <workItem from="1667467686937" duration="15061000" />
-      <workItem from="1667554643341" duration="5165000" />
+      <workItem from="1667554643341" duration="6038000" />
     </task>
     <servers />
   </component>
