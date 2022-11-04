@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8130cfd-0c11-430f-9369-86b8d577281a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/methodReferences/UserComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/methodReferences/MethodReferencesTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/generic/GenericsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/generic/GenericsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +48,14 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/delegate/Documents/JavaProjects/HelloWorld",
+    "last_opened_file_path": "C:/Users/delegate/Documents/JavaProjects/ParnelFactory/factory",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.methodReferences" />
       <recent name="org.generic" />
       <recent name="org.users" />
       <recent name="org.factory" />
@@ -68,7 +69,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GenericsTest.genericTypesCanBeRealised">
+  <component name="RunManager" selected="JUnit.MethodReferencesTests">
     <configuration name="GenericsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="factory" />
       <extension name="coverage">
@@ -100,48 +101,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MethodReferencesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="factory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.users.*" />
+          <option name="PATTERN" value="org.methodReferences.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.users" />
-      <option name="MAIN_CLASS_NAME" value="org.users.UsersTests" />
+      <option name="PACKAGE_NAME" value="org.methodReferences" />
+      <option name="MAIN_CLASS_NAME" value="org.methodReferences.MethodReferencesTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersTests.UserProcessorCanTransformUserDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MethodReferencesTests.sortMethodForCollections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="factory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.users.*" />
+          <option name="PATTERN" value="org.methodReferences.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.users" />
-      <option name="MAIN_CLASS_NAME" value="org.users.UsersTests" />
-      <option name="METHOD_NAME" value="UserProcessorCanTransformUserDetails" />
+      <option name="PACKAGE_NAME" value="org.methodReferences" />
+      <option name="MAIN_CLASS_NAME" value="org.methodReferences.MethodReferencesTests" />
+      <option name="METHOD_NAME" value="sortMethodForCollections" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersTests.UserProcessorCanUpdateUserPointsWithLambda" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MethodReferencesTests.sortMethodForCollectionsUsingComparator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="factory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.users.*" />
+          <option name="PATTERN" value="org.methodReferences.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.users" />
-      <option name="MAIN_CLASS_NAME" value="org.users.UsersTests" />
-      <option name="METHOD_NAME" value="UserProcessorCanUpdateUserPointsWithLambda" />
+      <option name="PACKAGE_NAME" value="org.methodReferences" />
+      <option name="MAIN_CLASS_NAME" value="org.methodReferences.MethodReferencesTests" />
+      <option name="METHOD_NAME" value="sortMethodForCollectionsUsingComparator" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MethodReferencesTests" />
+        <item itemvalue="JUnit.MethodReferencesTests.sortMethodForCollectionsUsingComparator" />
+        <item itemvalue="JUnit.MethodReferencesTests.sortMethodForCollections" />
         <item itemvalue="JUnit.GenericsTest.genericTypesCanBeRealised" />
         <item itemvalue="JUnit.GenericsTest" />
-        <item itemvalue="JUnit.UsersTests" />
-        <item itemvalue="JUnit.UsersTests.UserProcessorCanUpdateUserPointsWithLambda" />
-        <item itemvalue="JUnit.UsersTests.UserProcessorCanTransformUserDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +169,8 @@
       <workItem from="1667315305384" duration="843000" />
       <workItem from="1667316183778" duration="5544000" />
       <workItem from="1667380679115" duration="20101000" />
-      <workItem from="1667467686937" duration="13810000" />
+      <workItem from="1667467686937" duration="15061000" />
+      <workItem from="1667554643341" duration="5165000" />
     </task>
     <servers />
   </component>
