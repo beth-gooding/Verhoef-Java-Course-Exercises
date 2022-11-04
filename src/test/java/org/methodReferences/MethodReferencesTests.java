@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import org.users.User;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -25,13 +24,12 @@ public class MethodReferencesTests {
         var usersImmutable = List.of(user1, user2, user3);
 
         // This list of users is mutable, which means we will be able to directly sort this list
-        List<User> users = new ArrayList<>();
-        users.addAll(usersImmutable);
+        List<User> users = new ArrayList<>(usersImmutable);
 
         // act (sort)
         // using a comparator object
         Comparator<User> namesComparator = new UserComparator();
-        Collections.sort(users, namesComparator);
+        users.sort(namesComparator);
 
         // assert
         assertEquals("Clarisa", users.get(0).getName());
@@ -52,12 +50,13 @@ public class MethodReferencesTests {
         var usersImmutable = List.of(user1, user2, user3);
 
         // This list of users is mutable, which means we will be able to directly sort this list
-        List<User> users = new ArrayList<>();
-        users.addAll(usersImmutable);
+        List<User> users = new ArrayList<>(usersImmutable);
 
         // act (sort)
         // using a comparator lambda
-        Collections.sort(users, (u1, u2) -> {return u1.getName().compareTo(u2.getName());});
+        users.sort((u1, u2) -> {
+            return u1.getName().compareTo(u2.getName());
+        });
 
         // assert
         assertEquals("Clarisa", users.get(0).getName());
@@ -78,8 +77,7 @@ public class MethodReferencesTests {
         var usersImmutable = List.of(user1, user2, user3);
 
         // This list of users is mutable, which means we will be able to directly sort this list
-        List<User> users = new ArrayList<>();
-        users.addAll(usersImmutable);
+        List<User> users = new ArrayList<>(usersImmutable);
 
         // act
         users.removeIf(user -> user.getName().startsWith("S"));
@@ -103,8 +101,7 @@ public class MethodReferencesTests {
         var usersImmutable = List.of(user1, user2, user3);
 
         // This list of users is mutable, which means we will be able to directly sort this list
-        List<User> users = new ArrayList<>();
-        users.addAll(usersImmutable);
+        List<User> users = new ArrayList<>(usersImmutable);
 
         // act - use a lambda to say if a user has less than 15 points, remove them!
         users.removeIf(user -> user.getPoints() < 15);
@@ -127,8 +124,7 @@ public class MethodReferencesTests {
         var usersImmutable = List.of(user1, user2, user3);
 
         // This list of users is mutable, which means we will be able to directly sort this list
-        List<User> users = new ArrayList<>();
-        users.addAll(usersImmutable);
+        List<User> users = new ArrayList<>(usersImmutable);
 
         // act (sort)
         // using a comparator object
@@ -140,7 +136,7 @@ public class MethodReferencesTests {
      //   });
 
         // Instead of the lines above, we can use a method reference as below. Java can pass in the parameters for you
-        Collections.sort(users, pointsComparator::compareByPoints);
+        users.sort(pointsComparator::compareByPoints);
 
         // assert
         assertEquals("Clarisa", users.get(0).getName());
@@ -161,12 +157,11 @@ public class MethodReferencesTests {
         var usersImmutable = List.of(user1, user2, user3);
 
         // This list of users is mutable, which means we will be able to directly sort this list
-        List<User> users = new ArrayList<>();
-        users.addAll(usersImmutable);
+        List<User> users = new ArrayList<>(usersImmutable);
 
         // act (sort)
         // If we have a static method, we refer to the class rather than an object of the class for method references
-        Collections.sort(users, UserComparator::compareById);
+        users.sort(UserComparator::compareById);
 
         // assert
         assertEquals("Clarisa", users.get(0).getName());
